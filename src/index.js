@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import CoachReport from './CoachReport/CoachReport'
+import CoachReport2 from './CoachReport/CoachReport2'
 import {socket} from './Socket'
 
 if (document.getElementById('root')) {
@@ -18,6 +19,7 @@ if (document.getElementById('root')) {
   window.XDomain = {
     // http://localhost:3000/XDomain/CoachReport/
     CoachReport : CoachReport,
+    CoachReport2: CoachReport2,
     socket : socket,
     React,
     // Export render

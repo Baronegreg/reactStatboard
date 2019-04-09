@@ -10,7 +10,7 @@ import Calendar from './Calendar'
 
 const CheckboxTable = checkboxHOC(ReactTable);
 
-class CoachReport extends Component {
+class CoachReport2 extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -144,7 +144,6 @@ class CoachReport extends Component {
         this.props.socket.on('connect', this.dataSource.bind(this));
         this.props.socket.on('authStateChange', this.dataSource.bind(this));
         this.dataSource();
-        console.log('Coach Report Zoid Edition')
     }
 
     componentWillUpdate(){
@@ -262,12 +261,12 @@ class CoachReport extends Component {
 
     return (
      <div className="background">
-      <h6 className="pageTitle">GameSense StatBoard</h6>
+      {/* <h6 className="pageTitle">CoachReport2</h6> */}
         <div className="reactTable">
-          <div className="reportTitle">
+          {/* <div className="reportTitle">
             <h3>Coach Report</h3>
 
-          </div>
+          </div> */}
           <CheckboxTable
             keyField='id_submission'
             ref={r => (this.checkboxTable = r)}
@@ -310,4 +309,4 @@ class CoachReport extends Component {
   }
 }
 
-export default CoachReport;
+export default CoachReport2;
