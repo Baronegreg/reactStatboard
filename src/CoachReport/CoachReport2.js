@@ -261,7 +261,7 @@ class CoachReport2 extends Component {
 
     return (
      <div className="background">
-      {/* <h6 className="pageTitle">CoachReport2</h6> */}
+      <h6 className="pageTitle">CoachReport2</h6>
         <div className="reactTable">
           {/* <div className="reportTitle">
             <h3>Coach Report</h3>

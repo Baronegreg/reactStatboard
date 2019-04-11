@@ -5,6 +5,7 @@ import TestSubmissions from './TestSubmissions/TestSubmissions';
 import DrillUsage from './DrillUsage/DrillUsage';
 import CoachReport from './CoachReport/CoachReport';
 import { socket } from './Socket';
+import CoachReport2 from './CoachReport/CoachReport2';
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /testsubmissions
@@ -23,6 +24,7 @@ const Main = () => {
 	      <Route exact path='/testsubmissions' render={() => (<TestSubmissions socket={socket} />)} />
 	      <Route path='/drillusage' render={() => (<DrillUsage socket={socket} />)} />
         <Route path='/coachreport' render={() => (<CoachReport socket={socket} />)} />
+				<Route path='/coachreport2' render={() => (<CoachReport2 socket={socket} />)} />
 	    </Switch>
 	  </main>
 	);

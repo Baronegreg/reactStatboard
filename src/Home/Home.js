@@ -76,6 +76,9 @@ const Home = () => (
         <li>
           <Link to='/coachreport'>Coach Report</Link>
         </li>
+        <li>
+          <Link to='/coachreport2'>Coach Report 2</Link>
+        </li>
       </ul>
       <br />
 

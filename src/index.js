@@ -19,6 +19,16 @@ if (document.getElementById('root')) {
   window.XDomain = {
     // http://localhost:3000/XDomain/CoachReport/
     CoachReport : CoachReport,
+    // CoachReport2: CoachReport2,
+    socket : socket,
+    React,
+    // Export render
+    render
+
+  }
+
+  window.XDomain2 = {
+    // http://localhost:3000/XDomain/CoachReport2/
     CoachReport2: CoachReport2,
     socket : socket,
     React,
